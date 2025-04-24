@@ -31,10 +31,18 @@ except Exception as erro:
     st.error(f"Erro ao carregar a base de dados: {erro}")
     st.stop()
 
-# 🎨 Adicionar o logo da FECAP
-logo_path = "https://raw.githubusercontent.com/MarcelloLM/ingressantes_fecap/refs/heads/main/ingressantes_fecap/src/assets/LOGO%20FECAP%20VERDE.png"
-logo_image = Image.open(logo_path)
-st.sidebar.image(logo_image, width=200)  # Ajuste o tamanho conforme necessário
+# Carregar logo da FECAP de uma URL
+logo_url = "https://raw.githubusercontent.com/MarcelloLM/ingressantes_fecap/refs/heads/main/ingressantes_fecap/src/assets/LOGO%20FECAP%20VERDE.png"
+
+try:
+    # Baixar a imagem da URL
+    response = requests.get(logo_url)
+    img = Image.open(BytesIO(response.content))  # Abrir a imagem
+
+    # Exibir a imagem na barra lateral
+    st.sidebar.image(img, width=200)
+except Exception as e:
+    st.error(f"Erro ao carregar o logo da FECAP: {e}")
 
 # 🖱️ Filtros interativos
 st.sidebar.title("Filtros de Análise")
