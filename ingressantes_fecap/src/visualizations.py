@@ -563,7 +563,8 @@ def limpar_texto(texto, tipo="motivos"):
         "fecap", "curso", "faculdade", "grade", "curricular", "ensino", "professores", "boa", "instituição", "nota", "espero", "tornar", "boas", "conseguir", ""
         "o", "a", "que", "de", "e", "para", "com", "sobre", "também", "fazer", "meu", "trabalho", "minha", "um", 
         "uma", "localização", "escolhi", "mercado", "profissional", "experiência", "desenvolver", "aprendizado", 
-        "alto", "área", "espero", "expectativa", "bastante", "qualidade", "trabalhar", "aprender"
+        "alto", "área", "espero", "expectativa", "bastante", "qualidade", "trabalhar", "aprender", "Espero", "espero",
+        "Boas"
     }
     
     # Palavras indesejadas para objetivos de vida
@@ -573,7 +574,7 @@ def limpar_texto(texto, tipo="motivos"):
         "aprender", "experiência", "aproveitar", "mercado", "carreira", "ser", "muito", "novos", 
         "desafios", "vencer","busco", "em", "minha", "meu", "espero", "alcançar", 
         "adquirir", "fazer", "aproveitar", "ter", "Ter", "possa", ".", "assim", "surtando", "Médio",
-        ""
+        "tornar", "poder", "Conseguir"
     }
 
     # Escolher a lista de palavras indesejadas com base no tipo de texto
