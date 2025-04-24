@@ -1,5 +1,7 @@
 import streamlit as st
 from PIL import Image
+import requests
+from io import BytesIO
 from src.load_data import carregar_csv
 from src.visualizations import (
     grafico_renda,
