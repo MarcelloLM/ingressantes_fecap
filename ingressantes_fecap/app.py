@@ -32,7 +32,7 @@ except Exception as erro:
     st.stop()
 
 # 🎨 Adicionar o logo da FECAP
-logo_path = "C:/Users/46241887807/Desktop/ingressantes_fecap/src/assets/LOGO FECAP VERDE.png"
+logo_path = "https://raw.githubusercontent.com/MarcelloLM/ingressantes_fecap/refs/heads/main/ingressantes_fecap/src/assets/LOGO%20FECAP%20VERDE.png"
 logo_image = Image.open(logo_path)
 st.sidebar.image(logo_image, width=200)  # Ajuste o tamanho conforme necessário
 
