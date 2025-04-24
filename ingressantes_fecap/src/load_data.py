@@ -1,10 +1,9 @@
 import pandas as pd
-import os
 
 def carregar_csv():
-    caminho_base = os.path.join("data", "ingressantes_2025.csv")
+    url = "https://raw.githubusercontent.com/MarcelloLM/ingressantes_fecap/refs/heads/main/ingressantes_fecap/data/ingressantes_2025.csv"
     try:
-        df = pd.read_csv(caminho_base)
+        df = pd.read_csv(url)
         return df
     except Exception as e:
         raise Exception(f"Erro ao carregar a base de dados: {e}")
