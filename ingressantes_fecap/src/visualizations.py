@@ -555,7 +555,7 @@ def limpar_texto(texto, tipo="motivos"):
         "fiz", "oferece", "devido", "bom", "anos", "consegui", "objetivo", "Paulo", "todo", "nota", "o", "a",
         "que", "de", "e", "para", "com", "sobre", "também", "fazer", "meu", "trabalho", "minha", "um", "uma", 
         "localização", "escolhi", 'além', "bem", "muito", "vi", "ainda", "pai", "porque", "instituição", "ótima",
-        "boa", "pessoas"
+        "boa", "pessoas", "Espero", "espero"
     }
 
     # Palavras indesejadas para expectativas do curso
@@ -574,7 +574,7 @@ def limpar_texto(texto, tipo="motivos"):
         "aprender", "experiência", "aproveitar", "mercado", "carreira", "ser", "muito", "novos", 
         "desafios", "vencer","busco", "em", "minha", "meu", "espero", "alcançar", 
         "adquirir", "fazer", "aproveitar", "ter", "Ter", "possa", ".", "assim", "surtando", "Médio",
-        "tornar", "poder", "Conseguir"
+        "tornar", "poder", "Conseguir", "Espero", "espero"
     }
 
     # Escolher a lista de palavras indesejadas com base no tipo de texto
